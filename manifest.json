@@ -1,0 +1,11 @@
+{
+    "name": "crowsb",
+    "description": "Streaming / PlayStation / Spotify presence stack, group-chat trap guard, snipe log, text toolkit and reaction burst.",
+    "authors": [
+        {
+            "name": "crowsb"
+        }
+    ],
+    "main": "index.js",
+    "hash": "72d7706b530a9e9203e1fedcc34cb88ccaa534c8ad239626dd4f16f57a69d70a"
+}
