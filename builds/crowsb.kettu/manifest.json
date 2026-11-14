@@ -1,0 +1,19 @@
+{
+    "spec": 3,
+    "type": "plugin",
+    "id": "crowsb.kettu",
+    "version": "1.0.0",
+    "display": {
+        "name": "crowsb",
+        "description": "Streaming / PlayStation / Spotify presence stack, group-chat trap guard, snipe log, text toolkit and reaction burst.",
+        "authors": [
+            {
+                "name": "crowsb"
+            }
+        ]
+    },
+    "main": "index.js",
+    "extras": {
+        "bunny": {}
+    }
+}

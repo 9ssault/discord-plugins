@@ -1,0 +1,9 @@
+{
+    "$meta": {
+        "name": "discord plugins",
+        "description": "crowsb: presence stack, group-chat trap guard, snipe log and text toolkit."
+    },
+    "crowsb.kettu": {
+        "version": "1.0.0"
+    }
+}
