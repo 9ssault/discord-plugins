@@ -31,3 +31,4 @@ Commands, in any channel, prefix `z`:
 
 Settings live in **Settings → Plugins → crowsb**. State is per-plugin storage on
 the device; nothing leaves it except the presence call to Discord.
+
