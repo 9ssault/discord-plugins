@@ -40,8 +40,8 @@ Commands, any channel, prefix `z`:
 
 | verb | what |
 |---|---|
-| `zsnipe` | last deleted message in this channel |
-| `zeditsnipe` | last edited message, before + after |
+| `zsnipe [n]` | last deleted and edited messages in this channel |
+| `zsnipeclear` | drop this channel's snipe log |
 | `zmock <@user>` | repost that member's messages here, verbatim |
 | `zmock #channel <@user>` | same, in one channel |
 | `zmock webhook on\|off` | post the copies as them through a webhook |
@@ -56,8 +56,27 @@ Commands, any channel, prefix `z`:
 | `zclap <text>` | 👏 between words |
 | `zemojify <text>` | letter emojis |
 | `zreverse <text>` | reversed |
+| `zdiag` | what the plugin found at runtime (sender, registrar, token) |
+| `zhelp` | list every verb |
+| `zstream <title\|off> [gif]` | streaming card |
+| `zps <game\|off> [gif]` | PlayStation card |
+| `zsp <gif\|off>` | Spotify card |
+| `zstack [on\|off\|reset]` | toggle the extra cards |
 | `zrpc` | push the presence stack now |
-| `zrpc status` | show what is staged |
+| `zagct` | group-chat trap status |
+| `znick <name\|off>` | rename yourself in the guild |
+| `zbio <text>` | set about me |
+| `zreact [emoji]` | burst reaction on the replied message |
+| `znote <user id> <text>` | save a private note |
+| `znotes` | list saved notes |
 
-Settings live in **Settings → Plugins → crowsb**. State is per-plugin storage on
-the device; the only outbound calls are to Discord itself.
+Every verb is also a slash command: `/zsnipe`, `/zmock` (with `user` and
+`channel` options), `/zsponge`, and so on. Slash commands take a free-text
+`args` option; `/zmock` and `/znote` also take a `user` option, `/zmock` a
+`channel` option.
+
+Settings live in **Settings → Plugins → crowsb**: streaming/PS/Spotify cards,
+the trap guard, mirror webhooks/bots/pause, and the command bus itself (typed
+commands on/off, slash registration on/off, live sender + registrar status).
+State is per-plugin storage on the device; the only outbound calls are to
+Discord itself.
